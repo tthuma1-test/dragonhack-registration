@@ -6,41 +6,37 @@ import mikeyImg from "@/assets/michelangelo.png";
 
 const turtles = [
   {
-    name: "John",
+    name: "Tim",
     turtleName: "Leonardo",
     image: leoImg,
     achievement: "Highest grades in FRI's professional study programme",
-    funQuote: "I don't always lead the team, but when I do, we get straight A's.",
     colorClass: "text-leo",
     borderColorClass: "border-leo",
     delay: 0,
   },
   {
-    name: "Adam",
+    name: "Žan",
     turtleName: "Raphael",
     image: raphImg,
     achievement: "Second highest grades in FRI's professional study programme",
-    funQuote: "I'm not second place. I'm first of the rest. Big difference.",
     colorClass: "text-raph",
     borderColorClass: "border-raph",
     delay: 0.3,
   },
   {
-    name: "Steve",
+    name: "Aljaž",
     turtleName: "Donatello",
     image: donnieImg,
-    achievement: "JS Master — if it runs on V8, he's already built it",
-    funQuote: "I don't fix bugs. Bugs fix themselves out of respect.",
+    achievement: "Web and mobile master with years of experience",
     colorClass: "text-donnie",
     borderColorClass: "border-donnie",
     delay: 0.6,
   },
   {
-    name: "Peter",
+    name: "Domenic",
     turtleName: "Michelangelo",
     image: mikeyImg,
-    achievement: "Jack of all trades — and master of vibes",
-    funQuote: "I bring the pizza AND the pull requests. Cowabunga!",
+    achievement: "Team morale booster who will prevent any pizzas from being thrown away",
     colorClass: "text-mikey",
     borderColorClass: "border-mikey",
     delay: 0.9,
@@ -53,28 +49,22 @@ const Index = () => {
       {/* Hero */}
       <header className="py-16 md:py-24 text-center px-4">
         <p className="text-primary font-bold tracking-widest uppercase text-sm mb-4">
-          🍕 Hackathon Application 🍕
+          DragonHack 2026 Application
         </p>
         <h1 className="text-5xl md:text-7xl font-black text-glow text-primary mb-6">
-          TEAM TURTLE POWER
+          CODING MUTANT NINJA TURTLES
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
           Four coding ninjas from the sewers of <span className="text-foreground font-semibold">FRI</span>, 
-          ready to emerge and absolutely <span className="text-primary font-semibold">crush</span> your hackathon.
-        </p>
-        <p className="text-muted-foreground mt-4 text-lg">
-          We've got the grades, the skills, and an unhealthy obsession with pizza. 🐢
+          ready to absolutely <span className="text-primary font-semibold">crush</span> DragonHack.
         </p>
       </header>
 
       {/* Team Section */}
       <section className="px-4 pb-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-4">
-          Meet the <span className="text-primary">Squad</span>
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-10">
+          Meet the Squad
         </h2>
-        <p className="text-center text-muted-foreground mb-12 max-w-lg mx-auto">
-          Each turtle brings something unique to the sewer… err, the team.
-        </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {turtles.map((turtle) => (
             <TurtleCard key={turtle.name} {...turtle} />
@@ -85,7 +75,7 @@ const Index = () => {
       {/* Why Us */}
       <section className="px-4 pb-16 max-w-3xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-foreground mb-6">
-          Why Pick Us? 🤔
+          Why Pick Us?
         </h2>
         <div className="card-sewer rounded-xl p-8 space-y-4 text-left">
           <p className="text-foreground text-lg">
