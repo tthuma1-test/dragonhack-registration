@@ -113,7 +113,7 @@ const Index = () => {
           </p>
 
           <div className="flex justify-center items-center">
-            <img src={pleaseImg} alt="Puss in boots saying please." className="w-1/2 h-full object-cover" />
+            <img src={pleaseImg} alt="Puss in boots saying please." className="w-3/4 md:w-1/2 max-w-md object-cover" />
           </div>
         </div>
       </footer>
