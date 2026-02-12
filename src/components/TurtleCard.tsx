@@ -15,7 +15,7 @@ interface TurtleCardProps {
 const TurtleCard = ({ name, turtleName, image, achievement, githubUrl, projects, colorClass, borderColorClass, delay }: TurtleCardProps) => {
   return (
     <div
-      className="card-sewer rounded-xl p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:-translate-y-2 animate-float"
+      className="card-sewer rounded-xl p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:-translate-y-2"
       style={{ animationDelay: `${delay}s` }}
     >
       <div className={`w-40 h-40 rounded-full overflow-hidden border-4 ${borderColorClass} mb-4 bg-secondary`}>
@@ -23,21 +23,23 @@ const TurtleCard = ({ name, turtleName, image, achievement, githubUrl, projects,
       </div>
       <h3 className={`text-2xl font-bold ${colorClass} mb-1`}>{name}</h3>
       <p className="text-muted-foreground text-sm italic mb-3">a.k.a. {turtleName}</p>
-      <div className="card-sewer rounded-lg p-3 mb-3 w-full">
+      <div className="card-sewer-small rounded-lg p-3 mb-3 w-full">
         <p className="text-foreground font-medium text-sm">{achievement}</p>
       </div>
-      <div className="card-sewer rounded-lg p-3 mb-3 w-full">
-        <p className="text-muted-foreground text-xs leading-relaxed">{projects}</p>
+      <div className="card-sewer-small rounded-lg p-3 mb-3 w-full">
+        <p className="text-muted-foreground text-sm leading-relaxed">{projects}</p>
       </div>
-      <a
-        href={githubUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`inline-flex items-center gap-2 ${colorClass} hover:underline text-sm font-semibold`}
-      >
-        <Github size={16} />
-        GitHub
-      </a>
+      <div className="flex-1 flex items-end">
+        <a
+            href={githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`inline-flex items-center gap-2 ${colorClass} hover:underline text-sm font-semibold h-fit`}
+        >
+            <Github size={16} />
+            GitHub
+        </a>
+      </div>
     </div>
   );
 };

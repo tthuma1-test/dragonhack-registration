@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 140 20% 8%;
+    --background: 100 63% 6%;
     --foreground: 80 60% 90%;
 
     --card: 140 15% 14%;
@@ -13,7 +13,7 @@
     --popover: 140 15% 14%;
     --popover-foreground: 80 60% 90%;
 
-    --primary: 120 60% 45%;
+    --primary: 100 60% 45%;
     --primary-foreground: 140 20% 8%;
 
     --secondary: 140 15% 20%;
@@ -75,6 +75,12 @@
     background: linear-gradient(145deg, hsl(var(--card)), hsl(var(--muted)));
     border: 2px solid hsl(var(--border));
     box-shadow: 0 0 15px hsl(var(--sewer-glow) / 0.15), inset 0 1px 0 hsl(var(--foreground) / 0.05);
+  }
+
+  .card-sewer-small {
+    background: linear-gradient(145deg, hsl(var(--card)), hsl(var(--muted)));
+    border: 2px solid hsl(var(--border));
+    box-shadow: 0 0 10px hsl(var(--sewer-glow) / 0.15), inset 0 1px 0 hsl(var(--foreground) / 0.05);
   }
 
   .banner-pulse {

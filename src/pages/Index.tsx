@@ -3,15 +3,16 @@ import leoImg from "@/assets/leonardo.png";
 import raphImg from "@/assets/raphael.png";
 import donnieImg from "@/assets/donatello.png";
 import mikeyImg from "@/assets/michelangelo.png";
+import pleaseImg from "@/assets/please.gif";
 
 const turtles = [
   {
     name: "Tim",
     turtleName: "Leonardo",
     image: leoImg,
-    achievement: "Highest grades in FRI's professional study programme",
-    githubUrl: "https://github.com/john",
-    projects: "Built a real-time collaborative code editor and a distributed task scheduler used by 500+ students.",
+    achievement: "Top grades in FRI's undergrad programme",
+    githubUrl: "https://github.com/tthuma1",
+    projects: "Worked on projects ranging from a 3D web puzzle game to real estate market data mining.",
     colorClass: "text-leo",
     borderColorClass: "border-leo",
     delay: 0,
@@ -20,9 +21,9 @@ const turtles = [
     name: "Žan",
     turtleName: "Raphael",
     image: raphImg,
-    achievement: "Second highest grades in FRI's professional study programme",
-    githubUrl: "https://github.com/adam",
-    projects: "Created an AI-powered study planner and a campus navigation app with indoor mapping.",
+    achievement: "Also top grades in FRI's undergrad programme",
+    githubUrl: "https://github.com/ZanAmbrozic",
+    projects: "Avid participant in the Advent of Code.",
     colorClass: "text-raph",
     borderColorClass: "border-raph",
     delay: 0.3,
@@ -32,8 +33,8 @@ const turtles = [
     turtleName: "Donatello",
     image: donnieImg,
     achievement: "Web and mobile master with years of experience",
-    githubUrl: "https://github.com/steve",
-    projects: "Shipped a full-stack e-commerce platform and an open-source React component library with 200+ stars.",
+    githubUrl: "https://github.com/aljazw",
+    projects: "Created tons of apps, such as an Ethereum transaction crawler and mobile website blocker.",
     colorClass: "text-donnie",
     borderColorClass: "border-donnie",
     delay: 0.6,
@@ -43,8 +44,8 @@ const turtles = [
     turtleName: "Michelangelo",
     image: mikeyImg,
     achievement: "Team morale booster who will prevent any pizzas from being thrown away",
-    githubUrl: "https://github.com/peter",
-    projects: "Developed a multiplayer pizza-ordering game and a Discord bot serving 10k+ users.",
+    githubUrl: "http://github.com/KickTheApple",
+    projects: "Created his very own SSH honeypot for catching bad guys.",
     colorClass: "text-mikey",
     borderColorClass: "border-mikey",
     delay: 0.9,
@@ -87,16 +88,16 @@ const Index = () => {
         </h2>
         <div className="card-sewer rounded-xl p-8 space-y-4 text-left">
           <p className="text-foreground text-lg">
-            <span className="text-primary font-bold">✅ Academic Excellence:</span> Two of the top students in FRI's professional programme. We don't just code — we code with honors.
+            <span className="text-primary font-bold">Experience:</span> Each of us has years of experience in software development, which we would love to showcase at DragonHack.
           </p>
           <p className="text-foreground text-lg">
-            <span className="text-primary font-bold">✅ JavaScript Mastery:</span> Steve dreams in async/await. Your tech stack? Already conquered.
+            <span className="text-primary font-bold">Infinite creativity:</span> We will deliver something so innovative that it will blow your mind.
           </p>
           <p className="text-foreground text-lg">
-            <span className="text-primary font-bold">✅ Versatility:</span> Peter does everything. Frontend? Backend? Design? Ordering pizza at 3 AM? ✓
+            <span className="text-primary font-bold">Good vibes:</span> We are extremely friendly and will ensure that everyone at DragonHack has a good time with us.
           </p>
           <p className="text-foreground text-lg">
-            <span className="text-primary font-bold">✅ Team Synergy:</span> We've been coding together so long we finish each other's <code className="text-slime">git commits</code>.
+            <span className="text-primary font-bold">We really want it:</span> We want to be a part of DragonHack more than any other team.
           </p>
         </div>
       </section>
@@ -105,14 +106,15 @@ const Index = () => {
       <footer className="px-4 pb-8">
         <div className="banner-pulse max-w-4xl mx-auto bg-primary rounded-2xl p-8 md:p-12 text-center">
           <h2 className="text-3xl md:text-5xl font-black text-primary-foreground mb-4">
-            🐢 PLEASE PICK US 🐢
+            PLEASE PICK US
           </h2>
-          <p className="text-primary-foreground/80 text-lg md:text-xl max-w-xl mx-auto">
-            We promise to bring top-tier code, questionable pizza choices, and an energy that can only be described as… <strong className="text-primary-foreground">COWABUNGA!</strong>
+          <p className="text-primary-foreground/80 text-lg md:text-xl max-w-xl mx-auto mb-4">
+            We promise to bring top-tier code and help everyone have a good time.
           </p>
-          <p className="text-primary-foreground/60 text-sm mt-6">
-            — Team Turtle Power 🍕
-          </p>
+
+          <div className="flex justify-center items-center">
+            <img src={pleaseImg} alt="Puss in boots saying please." className="w-1/2 h-full object-cover" />
+          </div>
         </div>
       </footer>
     </div>
