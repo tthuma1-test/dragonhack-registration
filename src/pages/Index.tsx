@@ -108,8 +108,8 @@ const Index = () => {
           <h2 className="text-3xl md:text-5xl font-black text-primary-foreground mb-4">
             PLEASE PICK US
           </h2>
-          <p className="text-primary-foreground/80 text-lg md:text-xl max-w-xl mx-auto mb-4">
-            We promise to bring top-tier code and help everyone have a good time.
+          <p className="text-primary-foreground/80 text-lg md:text-xl max-w-2xl mx-auto mb-4">
+            We promise to bring top-tier code and help everyone have fun.
           </p>
 
           <div className="flex justify-center items-center">
